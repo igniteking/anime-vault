@@ -5,7 +5,7 @@ import { data } from "./_data";
 
 export const fetchAnmime = async (page: number) => {
   const response = await fetch(
-    `https://shikimori.one/api/animes?limit=8&order=popularity&page=${page}`
+    `https://shikimori.one/api/animes?limit=10&order=popularity&page=${page}`
   );
   const data = await response.json();
   return data.map((item: AnimeProp, index: number) => (
