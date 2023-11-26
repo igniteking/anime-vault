@@ -5,6 +5,7 @@ import Hero from "@/components/Hero";
 import Footer from "@/components/Footer";
 
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/react";
 
 const dmSans = DM_Sans({ subsets: ["latin"] });
 
@@ -25,6 +26,7 @@ export default function RootLayout({
           <Hero />
           {children}
           <Footer />
+          <Analytics />
         </main>
       </body>
     </html>
